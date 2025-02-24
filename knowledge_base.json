@@ -3,20 +3,25 @@
             "head": {
                 "name": "Cook",
                 "V": "onion soup",
-                "position": { "x": 0, "y": 0 }
+                "position": { "x": 0, "y": 0 },
+                "hash": "9d91a4ca"
             },
             "subtasks": [
                 {
-                    "Task": "Get onion"
+                    "Task": "Get onion",
+                    "hash": "ef8c998b"
                 },
                 {
-                    "Task": "Boil onion"
+                    "Task": "Boil onion",
+                    "hash": "48c542a2"
                 },
                 {
-                    "Task": "Plate onion"
+                    "Task": "Plate onion",
+                    "hash": "7b6737cd"
                 },
                 {
-                    "Task": "Deliver onion"
+                    "Task": "Deliver onion",
+                    "hash": "87810878"
                 }
             ]
         },
@@ -24,14 +29,17 @@
             "head": {
                 "name": "Get",
                 "V": "onion",
-                "position": { "x": 1, "y": 0 }
+                "position": { "x": 1, "y": 0 },
+                "hash": "ef8c998b"
             },
             "subtasks": [
                 {
-                    "Task": "Move to onion"
+                    "Task": "Interact",
+                    "hash": "efbc873e"
                 },
                 {
-                    "Task": "Interact"
+                    "Task": "Move to onion",
+                    "hash": "1017035a"
                 }
             ]
         },
@@ -39,15 +47,35 @@
             "head": {
                 "name": "Boil",
                 "V": "onion",
-                "position": { "x": 1, "y": 1 }
+                "position": { "x": 1, "y": 1 },
+                "hash": "48c542a2"
             },
             "subtasks": [
                 {
-                    "Task": "Move to pot"
+                    "Task": "Move to pot",
+                    "hash": "5991bb7e"
                 },
                 {
-                    "Task": "Interact"
+                    "Task": "Interact",
+                    "hash": "9febf6f8"
+                }
+            ]
+        },
+
+        {
+            "head": {
+                "name": "Get",
+                "V": "onion",
+                "position": { "x": 1, "y": 0 },
+                "hash": "ef8c998b"
+            },
+            "subtasks": [
+                {
+                    "Task": "Move to onion",
+                    "hash": "b988a294"
                 }
             ]
         }
+
+
     ]
