@@ -37,7 +37,7 @@ class WebInterface:
         while not self.response_received:
             self.sio.sleep(0.1)
         print('received response:', self.user_response)
-        return 'yes' == self.user_response
+        return self.user_response
     
     def edit_decomposition(self,best_match_decomposition):
         """

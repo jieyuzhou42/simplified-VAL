@@ -16,11 +16,11 @@
                     "hash": "48c542a2"
                 },
                 {
-                    "Task": "Plate onion",
+                    "Task": "Plate soup",
                     "hash": "7b6737cd"
                 },
                 {
-                    "Task": "Deliver onion",
+                    "Task": "Deliver soup",
                     "hash": "87810878"
                 }
             ]
@@ -73,6 +73,25 @@
                 {
                     "Task": "Move to onion",
                     "hash": "b988a294"
+                }
+            ]
+        },
+
+        {
+            "head": {
+                "name": "Plate",
+                "V": "soup",
+                "position": { "x": 1, "y": 0 },
+                "hash": "7b6737cd"
+            },
+            "subtasks": [
+                {
+                    "Task": "Go to plate",
+                    "hash": "d9323d98"
+                },
+                {
+                    "Task": "Interact",
+                    "hash": "24021d5a"
                 }
             ]
         }
