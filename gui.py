@@ -13,6 +13,9 @@ class HtnInterface:
 class ValAgent:
     def add_method_from_user_task(user_interface, user_task):
         user_subtasks = user_interface.ask_subtasks(user_task)
+        steps = user_interface.segment_confirmation(user_subtasks)
+        known_tasks = ['interact', 'go to']
+        grounded_predicate = user_interface.map_correction(user_subtasks, known_tasks)
 
 
 user_interface = WebInterface()
@@ -32,5 +35,7 @@ while decomposition:
     elif confirm_result == "more options":
         decomposition = tasks.get_decomposition(3)
     elif confirm_result == "add method":
-        ValAgent.add_method_from_user_task("plate soup")
+        ValAgent.add_method_from_user_task(user_interface, "plate soup")
         decomposition = tasks.get_decomposition(4)
+        # After rendering the chat box with VAL, VAL learns how to do the task. 
+        # The HTN will send the same format decomposition to the front end, and then reactflow will render it.
